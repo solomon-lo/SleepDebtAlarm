@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AlarmActivity"
+    android:background="@color/colorBlack"
+    android:id="@+id/relative_layout">
+
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/splash"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/iv"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Sleep Debt:"
+        android:layout_below="@+id/iv"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorWhite"
+        android:id="@+id/text"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0 Hours 0 Minutes"
+        android:layout_below="@+id/text"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorWhite"
+        android:id="@+id/tv_sleep_dent"
+        android:background="@drawable/tv_backgound"
+        android:padding="10dp"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To make up your sleep debt in days"
+        android:layout_below="@+id/tv_sleep_dent"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorWhite"
+        android:id="@+id/tv_regan_sleep"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Sleep Dent in "
+        android:layout_below="@+id/tv_regan_sleep"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorWhite"
+        android:id="@+id/tv_sleep_tonight"/>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:elevation="50dp"
+        android:fadingEdge="vertical"
+        android:layout_marginBottom="30dp"
+        app:cardCornerRadius="20dp">
+        <Button
+            android:id="@+id/btn_start_alarm"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Alarm"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/button_background"
+            android:foreground="?android:attr/selectableItemBackground"/>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

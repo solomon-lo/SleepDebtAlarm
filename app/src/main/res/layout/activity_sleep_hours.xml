@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SleepHoursActivity"
+    android:background="@color/colorBlack">
+
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/splash"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:id="@+id/iv"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How much sleep do you need per day?"
+        android:layout_below="@+id/iv"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorWhite"
+        android:id="@+id/text"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/text"
+        android:weightSum="2"
+        android:id="@+id/title"
+        android:layout_marginTop="20dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.Picker"
+            android:layout_weight="1"
+            android:text="Hours"
+            android:textColor="@color/colorWhite"
+            android:gravity="center"
+            android:textSize="20dp"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.Picker"
+            android:layout_weight="1"
+            android:text="Minutes"
+            android:textColor="@color/colorWhite"
+            android:gravity="center"
+            android:textSize="20dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/title"
+        android:weightSum="2"
+        >
+        <NumberPicker
+            android:id="@+id/numberPicker1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.Picker"
+            android:layout_weight="1"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:background="@color/colorWhite"
+            android:layout_gravity="center"/>
+        <NumberPicker
+            android:id="@+id/numberPicker2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.Picker"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:elevation="50dp"
+        android:fadingEdge="vertical"
+        android:layout_marginBottom="30dp"
+        app:cardCornerRadius="20dp">
+        <Button
+            android:id="@+id/btn_last_night"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/button_background"
+            android:foreground="?android:attr/selectableItemBackground"/>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

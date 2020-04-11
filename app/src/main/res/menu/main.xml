@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/menu_sleep_hours"
+        android:title="Hours Needed" />
+    <item
+        android:id="@+id/menu_last_night"
+        android:title="Hours Slept Last Night" />
+    <item
+        android:id="@+id/menu_regan"
+        android:title="Change Number of Days" />
+    <item
+        android:id="@+id/menu_reset"
+        android:title="Reset" />
+    <item
+        android:id="@+id/menu_about"
+        android:title="About" />
+</menu>
